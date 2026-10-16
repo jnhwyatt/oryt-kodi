@@ -1,33 +1,33 @@
-I'm jokingly called this FenLight+. There was always 1 thing I wished Fen could do that it couldn't and that was delete RD Cloud files from the results screen so that I didn't have to go into My Services everytime I accidently added a bad package to the cloud. Now it can. 
+# Oryt
 
-Since then I've also added more features, such as:
- - an option to unmark previous episode as watched in Next Episodes list
- - re-enabled 'Rollback to Previous Version' option that Tikipeter included in older versions of FenLight
- - UK specific options for "Trending" and "Providers" lists
- - TMDB Lists integration and abilty to export Trakt lists to TMDB
+Movies and TV in Kodi. Install, open, press play. No accounts, no setup.
 
-I've also released a companion android app because I got fed up with searching for movies using a TV Remote. You can download it here: `https://thejason40.github.io/apk/`
+Oryt is a personal fork of **Fen Light+ v2.4.0** (by Tikipeter / thejason40) with
+scrapers (CocoScrapers, GPLv3) bundled inside and everything pre-configured.
 
-This is the first Kodi addon I've ever edited so Tikipeter would probably shed a tear at how I butchered his code. I might keep working to improve this, I might not.
+## Install (any device)
 
-<h2>To Update From FenLight</h2>
+1. Install **Kodi 21** (Omega) on your device (kodi.tv, or the Downloader app on Fire Stick).
+2. Download the latest `plugin.video.oryttv-X.Y.Z.zip` from this repo's `packages/` folder
+   (on Fire Stick: open the zip's URL in the **Downloader** app; otherwise copy it to the device).
+3. In Kodi: **Settings → Add-ons → Install from zip file** → pick the zip.
+4. Open **Oryt** from the Add-ons section. That's it.
 
-In Kodi, go to Addons, open Fen Light -> Tools -> Settings -> General -> scroll down to 'Manage Addon Updates' and change these two fields:
+- **Fire Stick**: same steps. Navigate with the remote; press Play on a title and it plays.
+- **iPad**: Kodi itself must be sideloaded first (AltStore/Sideloadly). After that, same steps.
+- Updates arrive by themselves once installed - no reinstalling, ever.
 
-<b>Github Username:</b> thejason40<br />
-<b>Github Repo Address:</b> thejason40.github.io
+## For the developer (repo owner)
 
-Now go back to the Tools menu, and select Update Utilities -> Check For Updates
+Everything dev-side lives in the parent workspace:
 
-<h2>To Install Fresh</h2>
+- `scripts/sync-addon.ps1` - mirror addon source into the portable dev Kodi (`kodi-dev/`).
+- `scripts/dev-kodi.ps1` - launch the portable dev Kodi.
+- `tools/build_zip.ps1` - cut a release zip + update the `packages/` manifests.
+- `secrets/oryt_account.json` (gitignored) - the pre-authorized Real-Debrid account
+  that gets baked into release zips.
+- **MAINTENANCE.md** - the full playbook: releases, account rotation, scraper sync,
+  upstream sync, breakage triage.
 
-Go to Kodi -> File Manager -> Add Source -> add
-
-`https://thejason40.github.io/packages`
-
-call it "FenPlus"
-
-Then go to Kodi -> Settings -> Add Ons -> Install from Zip -> FenPlus -> Install FenLight+ 2.0.10.
-
-<hr>
-<i>Full credit to Tikipeter for creating Fen and FenLight. Thanks to minicoz for forking Tiki's repository before it was taken down.</i>
+Credits: Tikipeter (Fen Light), thejason40 (Fen Light+), minicoz (mirror), CocoJoe (CocoScrapers).
+Private, closed-beta software. Do not redistribute.

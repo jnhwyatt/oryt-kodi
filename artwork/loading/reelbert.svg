@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 640 520">
+  <defs>
+    <style>
+      .ink { stroke:#17191d; stroke-linecap:round; stroke-linejoin:round; }
+      .cream { fill:#f5ecd8; }
+      .gold { fill:#e6b64f; }
+    </style>
+  </defs>
+
+  <!-- little motion marks -->
+  <g fill="none" stroke="#e6b64f" stroke-width="9" stroke-linecap="round">
+    <path d="M92 182q-28-22-37-54"/>
+    <path d="M105 151q-13-25-11-49"/>
+    <path d="M519 189q29-19 40-49"/>
+    <path d="M534 157q15-25 12-49"/>
+  </g>
+
+  <!-- noodle arms, drawn behind the reel -->
+  <path d="M216 257C169 235 133 212 99 187" fill="none" class="ink" stroke-width="17"/>
+  <path d="M424 253C475 226 499 195 527 170" fill="none" class="ink" stroke-width="17"/>
+
+  <!-- left glove -->
+  <g class="ink" stroke-width="8">
+    <path d="M58 166c-10-8-12-18-6-25 6-7 16-4 23 4-6-13-4-23 4-26 9-3 16 5 19 18-1-16 5-23 14-21 9 2 12 12 9 27 7-12 16-15 23-9 8 7 3 18-5 29l-20 28c-8 11-25 13-37 5l-22-15c-9-6-10-16-2-23z" fill="#f5ecd8"/>
+    <path d="M92 165q12 7 21 19" fill="none"/>
+    <path d="M108 153q10 6 17 15" fill="none"/>
+  </g>
+
+  <!-- right glove -->
+  <g class="ink" stroke-width="8">
+    <path d="M530 153c5-12 15-17 22-11 6 5 4 15-2 25 10-11 20-12 25-4 6 8 0 17-12 25 15-5 24 0 23 9-1 9-11 14-26 15 14 4 20 12 15 20-5 8-16 7-29 1l-32-13c-13-6-19-22-13-35l10-24c4-10 13-13 19-8z" fill="#f5ecd8"/>
+    <path d="M550 173q-12 7-20 19" fill="none"/>
+    <path d="M566 183q-11 5-20 12" fill="none"/>
+  </g>
+
+  <!-- bendy legs -->
+  <path d="M266 369c-7 30-16 51-35 71" fill="none" class="ink" stroke-width="17"/>
+  <path d="M374 369c10 28 25 47 46 62" fill="none" class="ink" stroke-width="17"/>
+
+  <!-- tap shoes -->
+  <g class="ink" stroke-width="8">
+    <path d="M186 429c20-7 36-6 51 2l17 14c8 7 6 18-4 21l-69 3c-17 1-25-9-20-21 4-9 12-15 25-19z" fill="#25272b"/>
+    <path d="M370 423c20-4 35 2 49 14l12 16c6 9 1 19-10 19l-67-11c-16-3-21-15-13-25 6-8 15-12 29-13z" fill="#25272b"/>
+    <path d="M165 464q41 8 83-2" fill="none" stroke="#e6b64f" stroke-width="7"/>
+    <path d="M369 461q36 16 67 9" fill="none" stroke="#e6b64f" stroke-width="7"/>
+  </g>
+
+  <!-- film reel body -->
+  <circle cx="320" cy="260" r="131" fill="#17191d"/>
+  <circle cx="320" cy="260" r="119" fill="#e6b64f" class="ink" stroke-width="8"/>
+  <circle cx="320" cy="260" r="105" fill="#f5ecd8" class="ink" stroke-width="7"/>
+
+  <!-- six sprocket windows -->
+  <g fill="#25272b" stroke="#17191d" stroke-width="5">
+    <circle cx="320" cy="175" r="15"/>
+    <circle cx="393" cy="218" r="15"/>
+    <circle cx="393" cy="302" r="15"/>
+    <circle cx="320" cy="345" r="15"/>
+    <circle cx="247" cy="302" r="15"/>
+    <circle cx="247" cy="218" r="15"/>
+  </g>
+
+  <!-- cheeky face in the reel hub -->
+  <circle cx="320" cy="260" r="51" fill="#f8f0df" class="ink" stroke-width="7"/>
+  <ellipse cx="303" cy="250" rx="7" ry="12" fill="#17191d"/>
+  <ellipse cx="337" cy="250" rx="7" ry="12" fill="#17191d"/>
+  <path d="M299 275q21 21 42 0" fill="none" class="ink" stroke-width="7"/>
+  <g fill="#d77c55">
+    <ellipse cx="283" cy="269" rx="8" ry="5"/>
+    <ellipse cx="357" cy="269" rx="8" ry="5"/>
+  </g>
+
+  <!-- a small star-shaped lapel badge -->
+  <path d="m320 317 7 11 13 2-9 9 2 13-13-6-12 6 2-13-10-9 14-2z" fill="#d77c55" class="ink" stroke-width="4"/>
+
+  <!-- reel highlights -->
+  <path d="M254 193q19-18 42-19" fill="none" stroke="#fff9e9" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+  <path d="M395 282q-3 22-17 37" fill="none" stroke="#fff9e9" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+</svg>

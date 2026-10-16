@@ -1,0 +1,7 @@
+# Injected at build time by scripts/sync-addon.ps1 - never commit real credentials
+resources/data/
+
+__pycache__/
+*.pyc
+
+vendor-tmp/
