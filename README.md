@@ -17,6 +17,18 @@ scrapers (CocoScrapers, GPLv3) bundled inside and everything pre-configured.
 - **iPad**: Kodi itself must be sideloaded first (AltStore/Sideloadly). After that, same steps.
 - Updates arrive by themselves once installed - no reinstalling, ever.
 
+## Install from the online repo (Kodi File Manager)
+
+No downloading zips by hand — Kodi pulls straight from the release repo:
+
+1. In Kodi: **Settings → File manager → Add source** → click **`<None>`**
+2. Enter exactly: `https://jnhwyatt.github.io/oryt-kodi/packages/` → name it **Oryt** → **OK**
+3. **Settings → System → Add-ons**: enable **Unknown sources** (confirm the warning)
+4. **Settings → Add-ons → Install from zip file** → **Oryt** → `plugin.video.oryttv-1.0.1.zip`
+5. Wait for "Add-on installed", then find **Oryt** under Add-ons → Video add-ons
+
+Releases after 1.0.1 also reach installed addons automatically via the built-in updater.
+
 ## For the developer (repo owner)
 
 Everything dev-side lives in the parent workspace:

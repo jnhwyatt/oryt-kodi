@@ -17,6 +17,8 @@ Owner-facing. Everything needed to keep Oryt alive without any upstream dev.
 Old `packages/plugin.video.fen*` zips + `fen_light_*` manifests are upstream leftovers;
 the updater only matches `plugin.video.oryttv-*` and `oryt_version`, so they are inert.
 `Makefile` and `index.html` at repo root are upstream packaging/GitHub-Pages leftovers — unused.
+`packages/index.html` IS used: it lists the `plugin.video.oryttv` zips for the
+GitHub-Pages / Kodi File Manager install path — add a link line for every release.
 
 ## 2. Dev loop
 
@@ -35,9 +37,13 @@ Syntax check without Kodi: `cd plugin.video.oryttv; python -m compileall -q reso
 ## 3. Release
 
 ```powershell
-powershell -File kodi-addon/tools/build_zip.ps1 -Version 1.0.1 -GitHubUser <you> -GitHubRepo <repo>
+powershell -File kodi-addon/tools/build_zip.ps1 -Version 1.0.1 -GitHubUser jnhwyatt -GitHubRepo oryt-kodi
 # then commit + push packages/ to the repo's main branch
 ```
+
+Release repo: `github.com/jnhwyatt/oryt-kodi` (public). `packages/index.html` there is
+served via GitHub Pages (`https://jnhwyatt.github.io/oryt-kodi/packages/`) as the
+Kodi File Manager install source.
 
 - The script stamps `ORYT_UPDATE_USER`/`ORYT_UPDATE_REPO` into the zip's `updater.py`,
   bumps `addon.xml`, prepends the changelog entry, bundles `secrets/oryt_account.json`
