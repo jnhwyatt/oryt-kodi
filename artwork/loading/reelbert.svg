@@ -3,12 +3,12 @@
     <style>
       .ink { stroke:#17191d; stroke-linecap:round; stroke-linejoin:round; }
       .cream { fill:#f5ecd8; }
-      .gold { fill:#e6b64f; }
+      .gold { fill:#00F0FF; }
     </style>
   </defs>
 
   <!-- little motion marks -->
-  <g fill="none" stroke="#e6b64f" stroke-width="9" stroke-linecap="round">
+  <g fill="none" stroke="#00F0FF" stroke-width="9" stroke-linecap="round">
     <path d="M92 182q-28-22-37-54"/>
     <path d="M105 151q-13-25-11-49"/>
     <path d="M519 189q29-19 40-49"/>
@@ -41,13 +41,13 @@
   <g class="ink" stroke-width="8">
     <path d="M186 429c20-7 36-6 51 2l17 14c8 7 6 18-4 21l-69 3c-17 1-25-9-20-21 4-9 12-15 25-19z" fill="#25272b"/>
     <path d="M370 423c20-4 35 2 49 14l12 16c6 9 1 19-10 19l-67-11c-16-3-21-15-13-25 6-8 15-12 29-13z" fill="#25272b"/>
-    <path d="M165 464q41 8 83-2" fill="none" stroke="#e6b64f" stroke-width="7"/>
-    <path d="M369 461q36 16 67 9" fill="none" stroke="#e6b64f" stroke-width="7"/>
+    <path d="M165 464q41 8 83-2" fill="none" stroke="#00F0FF" stroke-width="7"/>
+    <path d="M369 461q36 16 67 9" fill="none" stroke="#00F0FF" stroke-width="7"/>
   </g>
 
   <!-- film reel body -->
   <circle cx="320" cy="260" r="131" fill="#17191d"/>
-  <circle cx="320" cy="260" r="119" fill="#e6b64f" class="ink" stroke-width="8"/>
+  <circle cx="320" cy="260" r="119" fill="#00F0FF" class="ink" stroke-width="8"/>
   <circle cx="320" cy="260" r="105" fill="#f5ecd8" class="ink" stroke-width="7"/>
 
   <!-- six sprocket windows -->
